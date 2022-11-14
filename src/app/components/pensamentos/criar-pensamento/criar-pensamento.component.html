@@ -10,6 +10,7 @@
       id="pensamento"
       name="pensamento"
       placeholder="Digite o seu pensamento"
+      [(ngModel)]="pensamento.conteudo"
     />
     <label for="autoria">autoria</label>
     <input
@@ -18,6 +19,7 @@
       id="autoria"
       name="autoria"
       placeholder="Digite a sua autoria ou fonte"
+      [(ngModel)]="pensamento.autoria"
     />
     <!-- Modelo 1 -->
     <label for="modelo">Selecione o modelo do card</label>
@@ -29,6 +31,7 @@
             id="modelo-1"
             value="modelo-1"
             name="modelo-card"
+            [(ngModel)]="pensamento.autoria"
           />
           <div class="custom-radio">
             <span></span>
@@ -41,8 +44,10 @@
             src="../../../../assets/imagens/modelo1.png"
             alt="Aspas Azuis "
           />
-          <p class="conteudo">Aqui vai o conteúdo</p>
-          <p class="autoria">Aqui vai a <b>autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria">
+            <b>{{ pensamento.autoria }}</b>
+          </p>
         </div>
       </div>
       <!-- Modelo 2 -->
@@ -53,6 +58,7 @@
             id="modelo-2"
             value="modelo-2"
             name="modelo-card"
+            [(ngModel)]="pensamento.autoria"
           />
           <div class="custom-radio">
             <span></span>
@@ -65,8 +71,10 @@
             src="../../../../assets/imagens/modelo2.png"
             alt="Aspas Azuis claro"
           />
-          <p class="conteudo">Aqui vai o conteúdo</p>
-          <p class="autoria">Aqui vai a <b>autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria">
+            <b>{{ pensamento.autoria }}</b>
+          </p>
         </div>
       </div>
       <!-- Modelo 3 -->
@@ -77,6 +85,7 @@
             id="modelo-3"
             value="modelo-3"
             name="modelo-card"
+            [(ngModel)]="pensamento.autoria"
           />
           <div class="custom-radio">
             <span></span>
@@ -89,14 +98,22 @@
             src="../../../../assets/imagens/modelo3.png"
             alt="Aspas Verdes"
           />
-          <p class="conteudo">Aqui vai o conteúdo</p>
-          <p class="autoria">Aqui vai a <b>autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria">
+            <b>{{ pensamento.autoria }}</b>
+          </p>
         </div>
       </div>
     </div>
     <div class="acoes">
       <button (click)="criaPensamento()" class="botao">Salvar</button>
-      <button (click)="cancelaPensamento()" class="botao">Cancelar</button>
+      <button
+        routerLink="/listarPensamento"
+        (click)="cancelaPensamento()"
+        class="botao"
+      >
+        Cancelar
+      </button>
     </div>
   </form>
 </section>

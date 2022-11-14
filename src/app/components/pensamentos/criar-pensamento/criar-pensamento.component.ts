@@ -10,6 +10,13 @@ export class CriarPensamentoComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  pensamento = {
+    id: '1',
+    conteudo: 'Angular 14',
+    autoria: 'dev',
+    modelo: 'modelo1',
+  };
+
   criaPensamento() {
     alert('Pensamento criado');
   }
