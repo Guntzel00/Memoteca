@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Pensamento } from '../pensamento';
+import { PensamentoService } from '../pensamento.service';
 
 @Component({
   selector: 'app-pensamento',
@@ -14,7 +16,7 @@ export class PensamentoComponent implements OnInit {
     modelo: 'modelo3',
   };
 
-  constructor() {}
+  constructor(private service: PensamentoService, private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -23,5 +25,15 @@ export class PensamentoComponent implements OnInit {
       return 'pensamento-g';
     }
     return 'pensamento-p';
+  }
+
+  excluirPensamento(evento: Event): void {
+    if (this.pensamento.id != null) {
+      console.log(this.pensamento.id);
+      this.service.excluir(this.pensamento.id).subscribe(() => {
+        alert('Pensamento exluido com sucesso');
+        window.location.reload();
+      });
+    }
   }
 }

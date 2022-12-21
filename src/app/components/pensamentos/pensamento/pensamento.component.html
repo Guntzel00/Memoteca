@@ -1,5 +1,6 @@
 <div
   class="pensamento {{ pensamento.modelo }} ff-roboto-mono"
+  id="{{ pensamento.id }}"
   [ngClass]="larguraPensamento()"
 >
   <p class="conteudo">{{ pensamento.conteudo }}</p>
@@ -15,6 +16,7 @@
     </button>
     <button class="botao-excluir">
       <img
+        (click)="excluirPensamento($event)"
         src="../../../../assets/imagens/icone-excluir.png"
         alt="Ícone de excluir"
       />
