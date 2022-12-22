@@ -1,27 +1,53 @@
-# Memoteca
+<h1>
+    <img src="https://user-images.githubusercontent.com/50676988/209207826-5ec64572-2e5a-4011-bdf3-7bbfdca07d25.png"
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+# Index
 
-## Development server
+- [About](#-about)
+- [Utilized Technologies](#-utilized-technologies)
+- [How to run the project](#-how-to-run-the-project)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🔖&nbsp; About
 
-## Code scaffolding
+It is a "storage of toughts" where you can save some phrases and use a simple CRUD functionalite. It was built with angular and node using a JSON fake api as back-end.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🚀 Utilized Technologies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The project was developed using the following technologies:
 
-## Running unit tests
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🗂 How to run the project
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
 
-## Further help
+    # Clone the repository
+    $ git clone https://github.com/Guntzel00/Memoteca.git
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    # Enter in the repository directory
+    $ cd Memoteca
+    
+    #Enter back-end and initialize it
+    1. $ cd backend
+    2. $ npm install
+    3. $ npm start
+
+    # Install the dependencies
+    1. $ cd .. 
+    2. $ npm install
+
+    # Initialize the application
+    $ ng serve
+```
+
+---
+
+Developed with ☕️ by Gustavo Guntzel.
