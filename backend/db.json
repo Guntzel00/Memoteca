@@ -4,7 +4,7 @@
       "id": 1,
       "conteudo": "Angular é legal, bla bla bla bla",
       "autoria": "Gustavo",
-      "modelo": "modelo1"
+      "modelo": "modelo3"
     },
     {
       "id": 2,
@@ -17,12 +17,6 @@
       "conteudo": "Angular é legal, bla bla bla bla",
       "autoria": "Gustavo",
       "modelo": "modelo3"
-    },
-    {
-      "id": 4,
-      "conteudo": "Angular é legal, bla bla bla bla",
-      "autoria": "Gustavo",
-      "modelo": "modelo2"
     },
     {
       "id": 5,
